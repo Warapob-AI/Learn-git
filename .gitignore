@@ -1,7 +1,10 @@
+# --- User Specific ---
 .env
 .venv
 .pytest_cache/
-__pycache__/
 
+# --- Python Cache (ครอบคลุมทุกโฟลเดอร์) ---
+# บรรทัดนี้จะ ignore โฟลเดอร์ __pycache__ ไม่ว่าจะอยู่ที่ root หรือใน src/ ก็ตาม
+__pycache__/
 *.py[cod]
 *$py.class
