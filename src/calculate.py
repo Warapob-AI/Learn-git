@@ -1,4 +1,4 @@
-def add_plus(num1, num2):
+def check_int(num1, num2): 
     if isinstance(num1, int): 
         num1 = float(num1) 
     
@@ -7,6 +7,12 @@ def add_plus(num1, num2):
 
     if not isinstance(num1, float) or not isinstance(num2, float):
         return "Error: Both arguments must be float"
+
+def add_plus(num1, num2):
+    check_int(num1, num2)
     
     return num1 + num2
 
+def add_negative(num1, num2): 
+    check_int(num1, num2)
+    return num1 - num2
