@@ -1,6 +1,6 @@
 # --- User Specific ---
 .env
-.venv
+venv
 .pytest_cache/
 
 # --- Python Cache (ครอบคลุมทุกโฟลเดอร์) ---
