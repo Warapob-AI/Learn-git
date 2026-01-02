@@ -1,5 +1,7 @@
 .env
 .venv
-.src/__pycache__
-.pytest_cache
-.__pycache__
+.pytest_cache/
+__pycache__/
+
+*.py[cod]
+*$py.class
