@@ -75,3 +75,39 @@ def test_add_negative_invalid_type(num1, num2):
     response = client.post("/add-negative", json=payload)
     
     assert response.status_code == 422
+    
+# ---------------------------------------------------------
+# กลุ่มที่ 1: ทดสอบกรณี Success (Status 200)
+# ---------------------------------------------------------
+@pytest.mark.parametrize("num1, num2, expected_result", [
+    (5.0, 20, 100.0),   # Float + Int
+    (5, 20, 100),        # Int + Int
+    (5.0, 20.0, 100.0),   # Float + Float
+])
+def test_add_multiply_success(num1, num2, expected_result):
+    payload = {
+        "num1": num1,
+        "num2": num2
+    }
+    response = client.post("/add-multiply", json=payload)
+
+    assert response.status_code == 200
+    assert response.json() == {"result": expected_result}
+
+
+# ---------------------------------------------------------
+# กลุ่มที่ 2: ทดสอบกรณีข้อมูลผิดประเภท (Status 422)
+# ---------------------------------------------------------
+@pytest.mark.parametrize("num1, num2", [
+    ("ไม่ใช่ตัวเลข", 20),  # num1 ผิด
+    (10, "ข้อความ"),      # num2 ผิด
+    ("กขค", "ABC"),       # ผิดทั้งคู่
+])
+def test_add_multiply_invalid_type(num1, num2):
+    payload = {
+        "num1": num1,
+        "num2": num2
+    }
+    response = client.post("/add-multiply", json=payload)
+    
+    assert response.status_code == 422
