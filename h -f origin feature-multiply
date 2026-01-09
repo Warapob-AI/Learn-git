@@ -1,0 +1,28 @@
+* [33m1f481be[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature-multiply[m[33m)[m delete duplicate code
+* [33m091b8f9[m add divite
+* [33m60ea44c[m feature multiply
+* [33m83e416e[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m update negative
+[31m|[m * [33m6a9e382[m[33m ([m[1;31morigin/feature-multiply[m[33m)[m delete duplicate code
+[31m|[m * [33m2c7c446[m add divite
+[31m|[m * [33m065356a[m feature multiply
+[31m|[m [32m|[m * [33m43f86cb[m[33m ([m[1;35mrefs/stash[m[33m)[m WIP on main: 61f7db6 feature add_negative
+[31m|[m [32m|[m[31m/[m[34m|[m 
+[31m|[m[31m/[m[32m|[m [34m|[m 
+[31m|[m [32m|[m * [33m5a7fd6d[m index on main: 61f7db6 feature add_negative
+[31m|[m [32m|[m[31m/[m  
+[31m|[m[31m/[m[32m|[m   
+* [32m|[m [33m61f7db6[m feature add_negative
+[32m|[m[32m/[m  
+* [33m979eba1[m first commit
+*   [33mb4c9d60[m chore: resolve merge conflicts in tests folder, src/calculate.py, server.py
+[35m|[m[36m\[m  
+[35m|[m * [33mabdc908[m add function multiply number
+* [36m|[m [33m27ade0a[m add function negative
+* [36m|[m [33m2a11779[m Dev: solving feature calculate
+* [36m|[m [33m8275c36[m Dev: start feature cal
+[36m|[m[36m/[m  
+* [33mfbc7eff[m remove venv
+* [33md57b4dc[m Apply gitignore
+* [33m8c87741[m Apply gitignore
+* [33m5f6e350[m first commit
+* [33m2b7b679[m first commit
