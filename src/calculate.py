@@ -21,3 +21,7 @@ def add_multiply(num1, num2):
 
 def add_divide(num1, num2): 
     return num1 // num2 
+
+def add_text(): 
+    return "push main now" 
+
